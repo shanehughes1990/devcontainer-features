@@ -1,13 +1,13 @@
 
-# Hello, World! (hello)
+# Google Cloud SDK (google-cloud-sdk)
 
-A hello world feature
+Google cloud SDK cli tools
 
 ## Example Usage
 
 ```json
 "features": {
-  "ghcr.io/shanehughes1990/devcontainer-features/google-cloud-sdk:latest": {}
+    "ghcr.io/shanehughes1990/devcontainer-features/google-cloud-sdk:1": {}
 }
 ```
 
@@ -15,8 +15,11 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| version | Select a google-cloud-sdk version | string | latest |
+| components | Comma seperated string of additions gcloud components to install, `none` skips adding components | string | none |
+
+
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/shanehughes1990/devcontainer-features/blob/main/src/google-cloud-sdk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
