@@ -1,0 +1,66 @@
+{
+	"name": "Google Cloud SDK",
+	"id": "google-cloud-sdk",
+	"version": "1.0.0",
+	"description": "Google cloud SDK cli tools",
+	"options": {
+		"version": {
+			"type": "string",
+			"proposals": [
+				"latest",
+				"454.0.0"
+			],
+			"default": "latest",
+			"description": "Select a google-cloud-sdk version"
+		},
+		"components": {
+			"type": "string",
+			"description": "Comma seperated string of additions gcloud components to install, `none` skips adding components",
+			"default": "none",
+			"proposals": [
+				"alpha",
+				"anthos-auth",
+				"app-engine-go",
+				"app-engine-java",
+				"app-engine-python-extras",
+				"app-engine-python",
+				"appctl",
+				"beta",
+				"bigtable",
+				"bq",
+				"bundled-python3-unix",
+				"cbt",
+				"cloud_sql_proxy",
+				"cloud-datastore-emulator",
+				"cloud-firestore-emulator",
+				"cloud-run-proxy",
+				"cloud-spanner-emulator",
+				"config-connector",
+				"core",
+				"docker-credential-gcr",
+				"enterprise-certificate-proxy",
+				"gcloud-crc32c",
+				"gke-gcloud-auth-plugin",
+				"gsutil",
+				"harbourbridge",
+				"kpt",
+				"kubectl-oidc",
+				"kubectl",
+				"kustomize",
+				"local-extract",
+				"log-streaming",
+				"minikube",
+				"nomos",
+				"package-go-module",
+				"pkg",
+				"pubsub-emulator",
+				"skaffold",
+				"spanner-migration-tool",
+				"terraform-tools"
+			]
+		}
+	},
+	"installsAfter": [
+		"ghcr.io/devcontainers/features/common-utils"
+	]
+}

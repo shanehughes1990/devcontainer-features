@@ -1,25 +1,37 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "json.schemas": [
-                    {
-                        "fileMatch": [
-                            "*/devcontainer-feature.json"
-                        ],
-                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
-                    }
-                ]
-            },
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
-    "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.insertSpaces": false,
+				"editor.detectIndentation": true,
+				"editor.tabSize": 2,
+				"json.schemas": [
+					{
+						"fileMatch": [
+							"*/devcontainer-feature.json"
+						],
+						"url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
+					}
+				]
+			},
+			"extensions": [
+				"davidanson.vscode-markdownlint",
+				"eamodio.gitlens",
+				"foxundermoon.shell-format",
+				"github.copilot-chat",
+				"github.copilot",
+				"github.vscode-pull-request-github",
+				"mads-hartmann.bash-ide-vscode",
+				"oderwat.indent-rainbow",
+				"ue.alphabetical-sorter",
+				"wayou.vscode-todo-highlight"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"remoteUser": "node",
+	"updateContentCommand": "npm install -g @devcontainers/cli"
 }
